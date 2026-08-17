@@ -25,11 +25,11 @@ st.markdown("---")
 # تحميل النماذج
 @st.cache_resource
 def load_us_model():
-    return load_model('breast_cancer_model.h5')
+    return load_model('breast_cancer_model.h5', compile=False)
 
 @st.cache_resource
 def load_mg_model():
-    return load_model('mammogram_model.h5')
+    return load_model('mammogram_model.h5', compile=False)
 
 # اختيار نوع الأشعة
 scan_type = st.radio("Select Scan Type (اختر نوع الأشعة):", 
