@@ -22,14 +22,14 @@ st.markdown("**إشراف:** د. [اسم الدكتور هنا]")
 st.markdown("**إعداد:** [اسم زميلك هنا]")
 st.markdown("---")
 
-# تحميل النماذج
+# تحميل النماذج بالاسم الجديد والامتداد الجديد
 @st.cache_resource
 def load_us_model():
-    return load_model('breast_cancer_model.h5', compile=False)
+    return load_model('breast_cancer_model.keras', compile=False)
 
 @st.cache_resource
 def load_mg_model():
-    return load_model('mammogram_model.h5', compile=False)
+    return load_model('mammogram_model.keras', compile=False)
 
 # اختيار نوع الأشعة
 scan_type = st.radio("Select Scan Type (اختر نوع الأشعة):", 
