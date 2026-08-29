@@ -13,16 +13,16 @@ with col1:
     if os.path.exists("logo.png"):
         st.image("logo.png", width=150)
 with col2:
-    st.markdown("### جامعة [اسم الجامعة هنا]")
-    st.markdown("#### كلية [اسم الكلية هنا]")
+    st.markdown("### كلية [كلية الجزيرة التقنية]")
+    st.markdown("####  [Gezira College of Technology]")
 
 st.markdown("---")
 st.title("🩺 Breast Cancer Detection & Classification System")
-st.markdown("**إشراف:** د. [اسم الدكتور هنا]")
-st.markdown("**إعداد:** [اسم زميلك هنا]")
+st.markdown("**مشرف البحث:** د. [د. سماح قيصر]")
+st.markdown("**إعداد:** [1/ الصديق حسين علي] - [2/ عبدالسلام شحات احمد] - [3/ محمد الدومه حسين]")
 st.markdown("---")
 
-# تحميل النماذج بالاسم الجديد والامتداد الجديد
+# تحميل النماذج
 @st.cache_resource
 def load_us_model():
     return load_model('breast_cancer_model.keras', compile=False)
