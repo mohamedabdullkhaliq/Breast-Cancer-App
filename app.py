@@ -13,13 +13,13 @@ with col1:
     if os.path.exists("logo.png"):
         st.image("logo.png", width=150)
 with col2:
-    st.markdown("### كلية [كلية الجزيرة التقنية]")
-    st.markdown("####  [Gezira College of Technology]")
+    st.markdown("### كلية الجزيرة التقنية")
+    st.markdown("####  Gezira College of Technology")
 
 st.markdown("---")
 st.title("🩺 Breast Cancer Detection & Classification System")
-st.markdown("**مشرف البحث:** د. [د. سماح قيصر]")
-st.markdown("**إعداد:** [1/ الصديق حسين علي] - [2/ عبدالسلام شحات احمد] - [3/ محمد الدومه حسين]")
+st.markdown("**مشرف البحث:** د. د. سماح قيصر")
+st.markdown("**إعداد:** 1/ الصديق حسين علي - 2/ عبدالسلام شحات احمد - 3/ محمد الدومه حسين")
 st.markdown("---")
 
 # تحميل النماذج
